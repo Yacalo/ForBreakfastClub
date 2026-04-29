@@ -1334,3 +1334,9 @@ body.on-dark .eyebrow-row { color: var(--off-white); border-color: rgba(232,230,
   .rails::after, .rails i { display: none; }
   .nav { top: 8px; left: 8px; right: 8px; }
 }
+
+
+/* Hide custom cursor on touch / coarse-pointer / phone-size devices */
+@media (hover: none), (pointer: coarse), (max-width: 768px) {
+    .cursor-dot { display: none !important; }
+}
