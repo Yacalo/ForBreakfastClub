@@ -2,14 +2,14 @@
 
 // ---------- YouTube videos ----------
 const VIDEOS = [
-  { id: 'pDByC9V9l6Q', title: 'Is the West losing the AI race?', ep: '01', cat: 'KEYNOTE' },
-  { id: '1uR1O9H_7F8', title: 'Filmmaking After AI: Calvin Herbst on Cameras, Code, and Creative Control', ep: '02', cat: 'FILM' },
-  { id: 'QKxfpaakzLY', title: 'Mastering AI Before It Masters You — Eric Stoddard, Car Design Legend Tells All', ep: '03', cat: 'DESIGN' },
-  { id: 'Yy4vYd8y_q8', title: 'What AI Really Changes in UX Design NOW', ep: '04', cat: 'UX' },
-  { id: 'wXvO3pL9Q_I', title: 'How AI Helps Small Businesses Win', ep: '05', cat: 'BUSINESS' },
-  { id: '8m9g_qR8h-o', title: 'The AI That Actually Gets Work Done', ep: '06', cat: 'PRODUCT' },
-  { id: 'Z_k8vS4wN6Y', title: 'Music Executive Jeremy Da: How To Compete With AI Music And Build Fan Power', ep: '07', cat: 'MUSIC' },
-  { id: 'vV2NnJ_v8Q0', title: 'Will Hoomanz always make better games?', ep: '08', cat: 'GAMES' },
+  { id: 'IBsfHvTj1O4', title: 'Is the West losing the AI race?', ep: '01', cat: 'KEYNOTE' },
+  { id: 'FEL2ZE8XvHE', title: 'Filmmaking After AI: Calvin Herbst on Cameras, Code, and Creative Control', ep: '02', cat: 'FILM' },
+  { id: 'zvl6eBTsfVc', title: 'Mastering AI Before It Masters You — Eric Stoddard, Car Design Legend Tells All', ep: '03', cat: 'DESIGN' },
+  { id: '4cQGgckHmYg', title: 'What AI Really Changes in UX Design NOW', ep: '04', cat: 'UX' },
+  { id: 'i2i9OlwqYk8', title: 'How AI Helps Small Businesses Win', ep: '05', cat: 'BUSINESS' },
+  { id: 'u0RS4R5TDpk', title: 'The AI That Actually Gets Work Done', ep: '06', cat: 'PRODUCT' },
+  { id: 'qG2xlNjRzXA', title: 'Music Executive Jeremy Da: How To Compete With AI Music And Build Fan Power', ep: '07', cat: 'MUSIC' },
+  { id: 'qoqrqkrgf70', title: 'Will Hoomanz always make better games?', ep: '08', cat: 'GAMES' }, { id: 'HckVo5_CCQA', title: 'JEEP 2030 - 60-min DESIGN CHALLENGE', ep: '09', cat: 'AUTO' },
 ];
 
 function thumbSrc(id) { return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; }
