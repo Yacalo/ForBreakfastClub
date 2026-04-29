@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Yann Caloghiris — Keynote Speaker · For Breakfast</title>
+<meta name="description" content="Keynote speaker on creativity, AI, and human potential. Host of For Breakfast. Executive Creative Director at Left Field Labs." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursor"></div>
+
+<!-- vertical rails -->
+<div class="rails" aria-hidden="true"><i></i></div>
+
+<!-- NAV -->
+<nav class="nav" aria-label="primary">
+  <a href="#top" class="brand-tag">
+    <img src="assets/logo.png" alt="For Breakfast" />
+  </a>
+  <div class="nav-right">
+    <button class="menu-btn" id="menu-open" aria-label="Open menu">Menu</button>
+    <a class="edit-btn" href="mailto:yann@forbreakfast.club" aria-label="Contact Yann">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L20 8l-4-4L4 16v4z"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- Menu overlay -->
+<div class="menu-panel" id="menu-panel" aria-hidden="true">
+  <button class="menu-close" id="menu-close">Close</button>
+  <a href="#talks">Talks</a>
+  <a href="#about">About</a>
+  <a href="#podcast">Podcast</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#faq">FAQ</a>
+  <a href="#book">Book Yann</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-art" aria-hidden="true">
+    <div class="dots parallax" data-depth="0.3"></div>
+    <svg class="ribbon parallax" data-depth="0.15" viewBox="0 0 1200 900" preserveAspectRatio="none">
+      <g transform="rotate(-18 600 450)">
+        <!-- long curving ribbon made of stacked lines, like the OCI wave -->
+        <g fill="none" stroke="rgba(232,230,222,0.55)" stroke-width="1">
+          <!-- Generated arcs -->
+          <path d="M-200,600 C200,300 700,300 1400,600" />
+          <path d="M-200,620 C200,320 700,320 1400,620" />
+          <path d="M-200,640 C200,340 700,340 1400,640" />
+          <path d="M-200,660 C200,360 700,360 1400,660" />
+          <path d="M-200,680 C200,380 700,380 1400,680" />
+          <path d="M-200,700 C200,400 700,400 1400,700" />
+          <path d="M-200,720 C200,420 700,420 1400,720" />
+          <path d="M-200,740 C200,440 700,440 1400,740" />
+          <path d="M-200,760 C200,460 700,460 1400,760" />
+          <path d="M-200,780 C200,480 700,480 1400,780" />
+          <path d="M-200,800 C200,500 700,500 1400,800" />
+          <path d="M-200,820 C200,520 700,520 1400,820" />
+          <path d="M-200,840 C200,540 700,540 1400,840" />
+          <path d="M-200,860 C200,560 700,560 1400,860" />
+          <path d="M-200,880 C200,580 700,580 1400,880" />
+          <path d="M-200,900 C200,600 700,600 1400,900" />
+          <path d="M-200,920 C200,620 700,620 1400,920" />
+          <path d="M-200,940 C200,640 700,640 1400,940" />
+          <path d="M-200,960 C200,660 700,660 1400,960" />
+          <path d="M-200,980 C200,680 700,680 1400,980" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-meta-top">
+    <span>EST. 2024</span>
+    <span>EP. <span id="ep-counter">24</span></span>
+    <span>LIVE FROM LA</span>
+  </div>
+
+  <aside class="hero-side">
+    <div class="rule"></div>
+    A podcast for creative people navigating AI — with honesty, curiosity, and the belief that how we shape what comes next is a choice we get to make.
+  </aside>
+
+  <h1 class="hero-title">
+    <span class="word"><span>Let's use AI</span></span>
+    <span class="word"><span>to create a future</span></span>
+    <span class="word"><span>we <em>actually</em> want.</span></span>
+  </h1>
+
+  <div class="hero-footer">
+    <p>Keynote · Panel<br/>Workshop · Brand Event</p>
+    <p>Based in Los Angeles<br/>Travels worldwide</p>
+    <div class="hero-cta">
+      <a class="btn btn--light" href="#podcast">Watch on YouTube →</a>
+      <a class="btn btn--ghost-light" href="#book">Invite Yann</a>
+    </div>
+  </div>
+</header>
+
+<!-- TRAILER STRIP -->
+<section class="trailer-strip" aria-label="Podcast trailer">
+  <div class="trailer-inner">
+    <div class="trailer-meta">
+      <div class="trailer-eyebrow">▶ Watch the trailer · 60 sec</div>
+      <div class="trailer-title">For Breakfast — <em>the trailer.</em></div>
+      <div class="trailer-sub">A podcast for creative people navigating AI.</div>
+    </div>
+    <div class="trailer-frame">
+      <iframe src="https://www.youtube.com/embed/Djv8MaxO4Hs?rel=0&modestbranding=1" title="For Breakfast trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- STORY / INTRO -->
+<section class="story" id="story">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.01 ]</span>
+      <span>The Premise</span>
+    </div>
+
+    <h2 class="story-lede reveal">Everyone's asking <em>"what will AI do next?"</em> I think we're asking the <em>wrong</em> question.</h2>
+
+    <div class="premise-row">
+      <div class="premise-copy">
+        <p class="reveal">My name is Yann. I've made a career out of creativity. Branding, advertising, design, experiential. I've started agencies and worked for many others. Today I'm in California, leading a team of creative technologists building tools, platforms and experiences for some of the most audacious brands in the world.</p>
+        <p class="reveal delay-1" style="margin-top:24px">For over twenty years I've watched this industry reinvent itself. Digital. The internet. Social media. Web3. Immersive. And now AI.</p>
+        <p class="reveal delay-2" style="margin-top:24px">It's no secret the industry is in deep disruption. My own journey with AI started a decade ago. We studied whether AI could take on human creativity. The results were startling. They led to articles, to talks, and eventually a stage at SXSW in front of 900 people.</p>
+      </div>
+      <figure class="premise-portrait reveal delay-1">
+        <div class="premise-portrait-frame">
+          <img src="assets/yann-portrait.jpg" alt="Yann Caloghiris" />
+        </div>
+        <figcaption>
+          <span>Yann Caloghiris</span>
+          <span>Host · For Breakfast</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="story-body">
+      <blockquote class="story-pullquote reveal">
+        Human creativity is on the brink of massive disruption. We may need to redefine its purpose.
+        <cite>— SXSW Keynote</cite>
+      </blockquote>
+
+      <div class="col--wide reveal">
+        <p>That was a few years ago. The questions it raised became the reason I started sharing the stories of creative people who are having AI 'For Breakfast' — shaping this technology to empower their own missions.</p>
+        <p style="margin-top:24px">So instead of asking "what will AI do next?" I went looking for the people asking: <em>how are we going to use AI to create the future we actually want?</em> A future that stays human. Creative. Cultural, joyful, always fresh and full of surprise.</p>
+      </div>
+
+      <div class="col--meta reveal">
+        <p>No hype. No doom. Just a frank conversation about how we shape what comes next, before it shapes us.</p>
+      </div>
+      <div class="col--meta reveal delay-1">
+        <p>Will AI ever have real emotional depth? Has the creative industry been put on notice? I wanted to find people who were actually wrestling with these questions. Not theorising. Doing.</p>
+      </div>
+    </div>
+
+    <div class="story-join reveal">Join us for <em>breakfast.</em></div>
+
+    <div class="socials reveal" aria-label="Follow For Breakfast">
+      <a class="social" href="https://www.youtube.com/@forbreakfastclub" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+        <span>YouTube</span>
+      </a>
+      <a class="social" href="https://open.spotify.com/show/6W5VLJxHFONMfF05LeMpuG?si=VJGWxHrNTU-OdRG51ogvyA" target="_blank" rel="noopener" aria-label="Spotify">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.7 0 12 0zm5.5 17.3c-.2.4-.7.5-1.1.3-3-1.8-6.7-2.2-11.1-1.2-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.8-1.1 8.9-.6 12.2 1.4.4.1.5.6.3 1zm1.5-3.3c-.3.4-.8.6-1.3.3-3.4-2.1-8.6-2.7-12.7-1.5-.5.1-1-.1-1.2-.6-.1-.5.1-1 .6-1.2 4.6-1.4 10.4-.7 14.3 1.7.5.3.6.9.3 1.3zm.1-3.4C15.1 8.2 8.7 8 4.9 9.1c-.6.2-1.2-.2-1.4-.7-.2-.6.2-1.2.7-1.4 4.4-1.3 11.5-1.1 16 1.6.5.3.7 1 .4 1.5-.3.5-.9.7-1.5.5z"/></svg>
+        <span>Spotify</span>
+      </a>
+      <a class="social" href="https://www.linkedin.com/in/caloghiris/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V8h3v11zM6.5 6.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3V8h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1V19z"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a class="social" href="https://www.tiktok.com/@for.breakfast" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.3a4.8 4.8 0 0 1-2.9-1c-.7-.6-1.2-1.4-1.4-2.3l-.1-.5h-3.4v13.8c0 1.4-1.1 2.5-2.5 2.5S6.8 17.7 6.8 16.3s1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1v-3.5a6 6 0 0 0-.8-.1A5.9 5.9 0 0 0 3.4 16c0 3.3 2.6 5.9 5.9 5.9 3.3 0 5.9-2.6 5.9-5.9V9.7a8 8 0 0 0 4.8 1.6V8c-.2 0-.3-.1-.4-.1z"/></svg>
+        <span>TikTok</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/forbreakfastclub/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1.1.4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2a3.6 3.6 0 0 1-.9 1.4 3.6 3.6 0 0 1-1.4.9c-.4.2-1.1.4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4a3.6 3.6 0 0 1-1.4-.9 3.6 3.6 0 0 1-.9-1.4c-.2-.4-.4-1.1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2a3.6 3.6 0 0 1 .9-1.4 3.6 3.6 0 0 1 1.4-.9c.4-.2 1.1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6a5.8 5.8 0 0 0-2.1 1.4A5.8 5.8 0 0 0 .6 4.2C.3 5 .1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9a5.8 5.8 0 0 0 1.4 2.1 5.8 5.8 0 0 0 2.1 1.4c.8.3 1.6.5 2.9.6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6a5.8 5.8 0 0 0 2.1-1.4 5.8 5.8 0 0 0 1.4-2.1c.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9a5.8 5.8 0 0 0-1.4-2.1A5.8 5.8 0 0 0 19.8.6c-.8-.3-1.6-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TALKS -->
+<section class="section talks" id="talks">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.02 ]</span>
+      <span>The Talks</span>
+    </div>
+
+    <div class="split-title">
+      <h2 class="left reveal">The</h2>
+      <h2 class="right reveal delay-1"><em>Talks</em></h2>
+    </div>
+
+    <p class="reveal" style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;max-width:60ch;margin-bottom:40px;color:var(--blue);line-height:1.7">
+      Each keynote is built on twenty years of delivered work and nineteen case studies with specific, measurable outcomes. Tailored to audience and room.
+    </p>
+
+    <div class="talks-list">
+      <a href="#book" class="talk-row reveal">
+        <div class="talk-num">T/01</div>
+        <div class="talk-title">The Irresistible Future: How to Shape AI Before It Shapes You</div>
+        <div class="talk-best">KEYNOTE · 45 MIN<br/>Best for: creative industry conferences, marketing events, brand and agency audiences.</div>
+        <div class="talk-chev">→</div>
+      </a>
+      <a href="#book" class="talk-row reveal delay-1">
+        <div class="talk-num">T/02</div>
+        <div class="talk-title">Trust is the New Feature: Why AI Adoption is a Belief Problem, Not a Technology Problem</div>
+        <div class="talk-best">KEYNOTE · 45 MIN<br/>Best for: technology conferences, enterprise events, product and innovation audiences.</div>
+        <div class="talk-chev">→</div>
+      </a>
+      <a href="#book" class="talk-row reveal delay-2">
+        <div class="talk-num">T/03</div>
+        <div class="talk-title">The Whitespace Imperative: Finding the Ideas That No Algorithm Can Touch</div>
+        <div class="talk-best">KEYNOTE · 45 MIN<br/>Best for: design and innovation conferences, senior leadership events, strategy and product audiences.</div>
+        <div class="talk-chev">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.03 ]</span>
+      <span>About Yann</span>
+    </div>
+
+    <div class="about-grid">
+      <h2 class="about-title reveal">Twenty years building <em>things that shouldn't exist</em> yet.</h2>
+
+      <div class="about-right">
+        <p class="about-lede reveal">Interactive AI experiences for 40,000 people at Dreamforce. A vehicle interface that made it into production at Ford. The most downloaded VR app in its category for Amazon Prime Video. An on-device AI system that ran live during a Qualcomm keynote without touching the cloud.</p>
+
+        <div class="stat-strip reveal">
+          <div class="stat">
+            <div class="stat-num">1,000%</div>
+            <div class="stat-lbl">Qualified sales handraisers · Salesforce</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">17×</div>
+            <div class="stat-lbl">ROI on internal events · Meta</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">40k+</div>
+            <div class="stat-lbl">Attendees reached · Dreamforce</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">900+</div>
+            <div class="stat-lbl">Audience at SXSW</div>
+          </div>
+        </div>
+
+        <div class="about-body">
+          <p class="reveal">When organisations are fractured by politics, competing priorities, or too many voices in the room, Yann's process creates the conditions for consensus — not by compromising the idea, but by finding the one that makes every stakeholder want to say yes. He has done this across some of the most complex organisations in the world: aligning product, marketing, and engineering at Ford; bridging the divide between Cisco and its most frustrated customers; uniting eight hundred people in a room at SXSW around a single, startling idea.</p>
+
+          <p class="reveal" style="margin-top:20px">He doesn't talk about AI. He builds with it — and uses it to find the creative whitespace that no algorithm can reach. The ideas that live in that space are the ones audiences remember, clients champion, and competitors cannot replicate.</p>
+
+          <p class="reveal" style="margin-top:20px">Yann has spoken at SXSW, SAE International, UCLA Health, Art Center College of Design, and to audiences of over 900 at a time. His keynotes are not presentations. They are experiences — designed with the same methodology he brings to every brief: go deep on the why, find the unfair advantage, build something irresistible, and measure everything.</p>
+
+          <p class="reveal" style="margin-top:20px">He also hosts <strong>For Breakfast</strong>, a podcast exploring how the creative industry shapes AI on its own terms. With 15,800+ YouTube subscribers and a global audience of designers, directors, and brand leaders, he brings both the thinking and the proof of an active practitioner.</p>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <div class="carousel-stack reveal" id="portrait-stack">
+          <!-- populated by JS -->
+        </div>
+        <div>
+          <div class="portrait-caption">
+            <span>Yann Caloghiris</span>
+            <span id="carousel-label">Los Angeles · 2024</span>
+          </div>
+          <div class="carousel-controls">
+            <button class="t-nav-btn" id="car-prev" aria-label="Previous">←</button>
+            <span id="carousel-index" class="carousel-index">01 / 05</span>
+            <button class="t-nav-btn" id="car-next" aria-label="Next">→</button>
+          </div>
+          <p class="reveal" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;line-height:1.8;margin-top:32px;color:var(--blue)">
+            Available for keynotes · panels · workshops · brand events.<br/><br/>
+            Partnering with For Breakfast means working with a practitioner who has delivered measurable outcomes for the world's most demanding brands — not just a speaker with slides.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS MARQUEE -->
+<section class="clients" aria-label="Clients">
+  <div class="clients-label">Work delivered for</div>
+  <div class="clients-track">
+    <span>Google</span><span>·</span>
+    <span>Meta</span><span>·</span>
+    <span>Salesforce</span><span>·</span>
+    <span>Qualcomm</span><span>·</span>
+    <span>Ford</span><span>·</span>
+    <span>Amazon</span><span>·</span>
+    <span>Microsoft</span><span>·</span>
+    <span>GitHub</span><span>·</span>
+    <span>Hasbro</span><span>·</span>
+    <span>Delta</span><span>·</span>
+    <span>Uber</span><span>·</span>
+    <span>VMware</span><span>·</span>
+    <span>Google</span><span>·</span>
+    <span>Meta</span><span>·</span>
+    <span>Salesforce</span><span>·</span>
+    <span>Qualcomm</span><span>·</span>
+    <span>Ford</span><span>·</span>
+    <span>Amazon</span><span>·</span>
+    <span>Microsoft</span><span>·</span>
+    <span>GitHub</span><span>·</span>
+    <span>Hasbro</span><span>·</span>
+    <span>Delta</span><span>·</span>
+    <span>Uber</span><span>·</span>
+    <span>VMware</span><span>·</span>
+  </div>
+</section>
+
+<!-- PODCAST -->
+<section class="section podcast" id="podcast">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.04 ]</span>
+      <span>The Podcast</span>
+    </div>
+
+    <div class="title-row">
+      <h2 class="reveal">Watch For<br/><em>Breakfast.</em></h2>
+      <div class="podcast-meta reveal delay-1">
+        <p>Designers, directors, strategists and artists who are having AI for breakfast — shaping this technology on their own terms.</p>
+        <p style="margin-top:16px;opacity:0.7">Latest episodes · Updated weekly</p>
+      </div>
+    </div>
+
+    <div class="videos-grid" id="videos-grid"></div>
+
+    <div class="videos-view-all">
+      <a class="btn btn--solid" href="https://www.youtube.com/@forbreakfastclub" target="_blank" rel="noopener">View all episodes →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.05 ]</span>
+      <span>In Their Words</span>
+    </div>
+
+    <div id="t-stage"></div>
+
+    <div class="testimonial-foot">
+      <div class="t-nav">
+        <button id="t-prev" aria-label="Previous">↑</button>
+        <button id="t-next" aria-label="Next">↓</button>
+      </div>
+      <div id="t-count">01 / 02</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="eyebrow-row">
+      <span>[ FB.06 ]</span>
+      <span>Frequently Asked</span>
+    </div>
+
+    <h2 class="reveal">Before you <em>book.</em></h2>
+
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-item-head"><h3>What does Yann Caloghiris speak about?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann speaks on three interconnected themes: the creative whitespace that AI cannot reach, why AI adoption is a belief problem rather than a technology problem, and how ambitious leaders build a future with AI they are actually proud of. His talks are built on twenty years of delivered work and nineteen case studies with specific, measurable outcomes.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What results has Yann's work produced?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann's work has produced a 1,000% increase in qualified sales handraisers for Salesforce, 17× ROI on an internal events platform for Meta, 21 vehicle interface features approved for production at Ford, and a VR streaming experience that became the most downloaded VOD app in its category for Amazon Prime Video. He has delivered AI-powered experiences to over 40,000 attendees at a single event.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>Who has Yann worked with?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann has led experiential programmes and delivered AI-powered experiences for Google, Meta, Salesforce, Qualcomm, Ford, Amazon, Microsoft, GitHub, Hasbro, Delta, Uber, and VMware, among others.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>Where has Yann spoken before?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann has spoken at SXSW in front of audiences of 900 and above, SAE International, UCLA Health, Art Center College of Design, and at major industry events and conferences across the United States. He is available for keynotes, panels, workshops, and corporate events.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What is Yann's speaking fee?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Speaking fees start from $7,500 for association and university events, with keynote fees for major conferences and corporate events available on request. To discuss booking, contact yann@forbreakfast.club.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>How do I book Yann Caloghiris as a speaker?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>To enquire about booking Yann for a keynote, panel, or workshop, email <a href="mailto:yann@forbreakfast.club" style="color:var(--blue)">yann@forbreakfast.club</a>. Please include your event name, date, location, audience size, and a brief description of the topic or theme.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What is the For Breakfast podcast?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>For Breakfast is a podcast hosted by Yann Caloghiris exploring how the creative industry shapes AI on its own terms. Each episode features a designer, director, strategist, filmmaker, or technologist who is using AI deliberately with their values intact. It is available on YouTube at @forbreakfastclub and across all major podcast platforms.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What is Yann Caloghiris's background?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann Caloghiris is the Chief Experience Officer (CXO) at Left Field Labs, a part of Stagwell Group. Over twenty years he has led creative organisations across branding, advertising, design, and experiential, started agencies, and delivered work for some of the world's most demanding brands. His work with AI began a decade ago when he led research into whether AI could take on human creativity — research that culminated in a presentation at SXSW and a white paper that has shaped his thinking ever since.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What is Yann's methodology?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>Yann's approach centres on finding the creative whitespace that AI cannot reach. He uses AI to map the known competitive and cultural territory with precision, then deploys human creativity, cultural empathy, and deliberate process to find and occupy the space beyond it. His Concept-Led process systematically identifies the client's unfair advantage, aligns stakeholders around a single irresistible direction, and delivers measurable outcomes. Every project is prototyped, tested, and iterated before delivery.</p></div></div>
+
+      <div class="faq-item"><div class="faq-item-head"><h3>What is the 'whitespace imperative'?</h3><div class="faq-toggle">+</div></div><div class="faq-item-body"><p>The Whitespace Imperative is Yann's central creative philosophy: AI is derivative by nature, working from what already exists. The ideas that change industries — the ones that stop rooms, that clients fight to own, that competitors cannot replicate — live in the whitespace beyond what any model can generate. Yann's process systematically finds that space and builds there.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final" id="book">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="inner">
+    <p class="cta-eyebrow reveal">[ FB.07 ] · Let's get to work</p>
+    <h2 class="reveal">Let's shape <em>what comes next</em> — before it shapes us.</h2>
+    <a class="cta-email reveal" href="mailto:yann@forbreakfast.club">yann@forbreakfast.club →</a>
+
+    <div class="cta-grid">
+      <div class="reveal">
+        <div class="lbl">Formats</div>
+        <div class="val">Keynote · Panel · Workshop · Brand Event</div>
+      </div>
+      <div class="reveal delay-1">
+        <div class="lbl">Based in</div>
+        <div class="val">Los Angeles · Travels worldwide</div>
+      </div>
+      <div class="reveal delay-2">
+        <div class="lbl">Starting from</div>
+        <div class="val">$7,500 · Association &amp; University</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2024 Yann Caloghiris · For Breakfast</div>
+  <div>
+    <a href="https://www.linkedin.com/in/caloghiris/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.youtube.com/@forbreakfastclub" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.imdb.com/name/nm9759604/" target="_blank" rel="noopener">IMDb</a>
+    <a href="mailto:yann@forbreakfast.club">Email</a>
+  </div>
+</footer>
+
+<script src="script.js?v=13"></script>
+</body>
+</html>
