@@ -9,7 +9,7 @@ const VIDEOS = [
   { id: 'i2i9OlwqYk8', title: 'How AI Helps Small Businesses Win', ep: '05', cat: 'BUSINESS' },
   { id: 'u0RS4R5TDpk', title: 'The AI That Actually Gets Work Done', ep: '06', cat: 'PRODUCT' },
   { id: 'qG2xlNjRzXA', title: 'Music Executive Jeremy Da: How To Compete With AI Music And Build Fan Power', ep: '07', cat: 'MUSIC' },
-  { id: 'qoqrqkrgf70', title: 'Will Hoomanz always make better games?', ep: '08', cat: 'GAMES' }, { id: 'HckVo5_CCQA', title: 'JEEP 2030 - 60-min DESIGN CHALLENGE', ep: '09', cat: 'AUTO' },
+  { id: 'HckVo5_CCQA', title: 'JEEP 2030 - 60-min DESIGN CHALLENGE', ep: '08', cat: 'AUTO' },
 ];
 
 function thumbSrc(id) { return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; }
